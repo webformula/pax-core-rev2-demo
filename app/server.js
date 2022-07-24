@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
-import { routeMiddleware } from '@webformula/pax-core';
+import { middleware } from '@webformula/pax-core';
 
 const PORT = 8080;
 const app = express();
@@ -10,7 +10,7 @@ app.use(cors({
   optionsSuccessStatus: 200
 }));
 
-app.use(routeMiddleware({
+app.use(middleware({
   pagesFolder: 'app/pages',
   path404: 'app/pages/404/page.html',
 
