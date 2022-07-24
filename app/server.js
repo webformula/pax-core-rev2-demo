@@ -18,7 +18,7 @@ app.use(middleware({
    * If false then only the code for the requested page will be loaded
    * If true then all code is loaded and it will start working like a SPA
    */
-  allowSPA: false
+  allowSPA: true
 }));
 
 app.listen({ port: PORT }, () => {

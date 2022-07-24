@@ -9,6 +9,10 @@ export default class extends Page {
   connectedCallback() {
     console.log('connectedCallback');
   }
+
+  async beforeRender() {
+    this.label = 'one';
+  }
   
   onUrlData() {
     console.log('urlParameters', this.urlParameters);

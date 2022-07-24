@@ -6,6 +6,10 @@ export default class extends Page {
     super();
   }
 
+  async beforeRender() {
+    this.label = 'two';
+  }
+
   onclick(event) {
     logger(event);
     console.log(document.querySelector('body'));
