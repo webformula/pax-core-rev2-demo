@@ -7,15 +7,11 @@ export default class extends Page {
   }
 
   connectedCallback() {
-    console.log('connectedCallback');
+    console.log('url data in connectedCallback()', this.urlParameters);
   }
 
   async beforeRender() {
     this.label = 'one';
-  }
-  
-  onUrlData() {
-    console.log('urlParameters', this.urlParameters);
   }
 
   onclick(event) {

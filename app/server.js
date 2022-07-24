@@ -11,8 +11,8 @@ app.use(cors({
 }));
 
 app.use(middleware({
-  pageFolderPath: 'appServer/pages',
-  path404: 'appServer/pages/404/page.html',
+  pageFolderPath: 'app/pages',
+  path404: 'app/pages/404/page.html',
 
   /**
    * If false then only the code for the requested page will be loaded
