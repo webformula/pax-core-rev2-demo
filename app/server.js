@@ -11,7 +11,7 @@ app.use(cors({
 }));
 
 app.use(middleware({
-  pagesFolder: 'app/pages',
+  pageFolderPath: 'app/pages',
   path404: 'app/pages/404/page.html',
 
   /**
