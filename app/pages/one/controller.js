@@ -4,7 +4,7 @@ export default new class extends Controller {
   constructor() {
     super({
       pageTitle: 'One',
-      routes: ['one', 'one-alt', 'one/:id', 'once/*']
+      routes: ['one', 'one-alt', 'one/:id']
     });
   }
 
