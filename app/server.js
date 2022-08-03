@@ -21,6 +21,9 @@ app.use(middleware({
   allowSPA: true
 }));
 
+
+
 app.listen({ port: PORT }, () => {
   console.log(`🚀 Server ready at http://localhost:${PORT}`);
 });
+
