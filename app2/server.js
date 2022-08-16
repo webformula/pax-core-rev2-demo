@@ -6,7 +6,8 @@ import { App } from '@webformula/pax-core/server';
 const app = new App({
   appRoot: 'app2',
   indexTemplate: 'pages/index.html',
-  notFoundTemplate: 'pages/404.html'
+  notFoundTemplate: 'pages/404.html',
+  SPA: true
 });
 
 const PORT = 8080;
@@ -57,4 +58,3 @@ app.route({
 server.listen({ port: PORT }, () => {
   console.log(`🚀 Server ready at http://localhost:${PORT}`);
 });
-
