@@ -6,6 +6,8 @@ customElements.define('test-button', class TestButton extends HTMLElementExtende
 
   constructor() {
     super();
+
+    this.value = 'test value';
   }
 
   connectedCallback() {
@@ -18,8 +20,8 @@ customElements.define('test-button', class TestButton extends HTMLElementExtende
 
   template() {
     return /*html*/`
-      <button onclick="component.testClick(); console.log(component)">
-        <slot></slot>
+      <button part="foo" class="red" onclick="component.testClick(); console.log(component)">
+        <slot></slot> ${this.value}
       </button>
     `;
   }
