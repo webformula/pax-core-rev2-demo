@@ -1,6 +1,5 @@
 import { HTMLElementExtended  } from '@webformula/pax-core';
 
-
 customElements.define('test-button', class TestButton extends HTMLElementExtended {
   useShadowRoot = true;
 
