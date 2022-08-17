@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app2/server.js"
+    "start": "nodemon app2/server.js",
+    "dev": "webpack serve --open --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,13 @@
     "@webformula/pax-core": "file:../pax-core",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "posthtml-loader": "^2.0.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
   }
 }
